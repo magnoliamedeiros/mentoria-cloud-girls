@@ -1,0 +1,20 @@
+<meta charset="UTF-8"/>
+
+<input/>
+<button>Exibir texto digitado</button>
+
+<script>
+
+    var entrada = document.querySelector("input");
+
+    var botao = document.querySelector("button");
+    botao.onclick = exibe;
+
+    function exibe() {
+        alert(entrada.value);
+
+        // Vamos limpar o campo
+        entrada.value = "";
+    }
+    
+</script>

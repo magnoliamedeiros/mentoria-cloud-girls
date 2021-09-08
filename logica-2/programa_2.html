@@ -1,0 +1,40 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function desenhaQuadradoVerde(x, y, cor){
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillStroke = 'black'; // cor da borda
+
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeRect(x, y, 50, 50);
+    }
+
+    // desenhaQuadradoVerde(0, 0, 'blue');
+    // desenhaQuadradoVerde(0, 50, 'red');
+    // desenhaQuadradoVerde(0, 100, 'yellow');
+
+    // desenhaQuadradoVerde(0, 0, 'green');
+    // desenhaQuadradoVerde(50, 0, 'green');
+    // desenhaQuadradoVerde(100, 0, 'green');
+
+    /*
+    var x = 0;
+
+    while(x < 600) {
+        desenhaQuadradoVerde(x, 0, 'green');
+        desenhaQuadradoVerde(x, 50, 'red');
+        desenhaQuadradoVerde(x, 100, 'blue');
+        x = x + 50;
+    }
+    */
+
+    for (var x = 0; x < 600; x = x + 50){
+        desenhaQuadradoVerde(x, 0, 'green');
+    }
+
+</script>

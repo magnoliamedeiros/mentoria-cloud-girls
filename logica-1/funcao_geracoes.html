@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+
+	function pulaLinha() {
+		document.write("<br>")
+	}
+	
+	function calculo(anoAtual, idadeMediaParaTerFilhos) {
+		document.write(Math.round((anoAtual - 1500) / idadeMediaParaTerFilhos));
+	}
+
+	function mostra(texto) {
+		document.write(texto);
+	}
+
+	var idadeMediaParaTerFilhos = 28;
+	var anoAtual = 2016;
+
+	mostra("Desde 1500 até o " + anoAtual + " se passaram ");
+	calculo(anoAtual, idadeMediaParaTerFilhos);
+	mostra(" gerações.");
+	pulaLinha();
+
+</script>

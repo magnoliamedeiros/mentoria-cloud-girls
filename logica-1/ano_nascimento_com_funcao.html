@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+<script>
+	// ATENÇÃO: função indica uma ação que será executada, então, sempre verbo!
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	var ano = 2016;
+
+	// Chamar uma função que espera um parametro e não passar esse parametro
+	// resultará em undefined
+	// mostra();
+	// Resultado: undefined
+
+	// document.write("Flávio tem " + (ano - 1977) + " anos.");
+	mostra("Flávio tem " + (ano - 1977) + " anos.");
+
+	// document.write("Joaquim tem " + (ano - 1996) + " anos.");
+	mostra("Joaquim tem " + (ano - 1996) + " anos.");
+	
+	// document.write("João tem " + (ano - 1980) + " anos.");
+	mostra("João tem " + (ano - 1980) + " anos.");
+
+	mostra("Finalizado!");
+
+</script>
