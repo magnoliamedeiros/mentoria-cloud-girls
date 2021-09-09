@@ -1,11 +1,12 @@
-// Pega todos os pacientes
-var pacientes = document.querySelectorAll(".paciente");
-console.log(pacientes);
-pacientes.forEach(function(paciente){
+// Selecionar todos os pacientes
+var tabela = document.querySelector("table");
+console.log(tabela);
 
-    // evento de dublo clique 'dblclick'
-    paciente.addEventListener("dblclick", function(){
-        console.log("fui com duplo clique");
-        this.remove();
-    }); 
+tabela.addEventListener("dblclick", function(event){
+    
+    event.target.parentNode.classList.add("fadeOut");
+
+    setTimeout(function(){
+        event.target.parentNode.remove();
+    }, 300);
 });
