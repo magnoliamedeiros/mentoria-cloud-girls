@@ -30,8 +30,6 @@ function novaLinha(usuario, palavras) {
 }
 
 // REMOVER LINHA
-
-
 function removeLinha() {
     event.preventDefault();
     $(this).parent().parent().remove();
